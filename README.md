@@ -15,7 +15,7 @@ A flowchart of the code:
 
 and of the pathfollowing case:
 
-![bvpsuite2.0pathfollowing_flowchart.png](https://github.com/NumODEsTUW/bvpsuite2.0/blob/main/bvpsuite2.0FlowCharts/bvpsuite2.0_pathfollowing_flowchart.png)
+![bvpsuite2.0pathfollowing_flowchart.png](https://github.com/NumODEsTUW/bvpsuite2.0/blob/main/bvpsuite2.0FlowCharts/bvpsuite2.0pathfollowing_flowchart.png)
 
 
 ## How to get started using bvpsuite2.0
