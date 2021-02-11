@@ -6,6 +6,12 @@ The package **bvpsuite2.0** has been developed at the Institute for Analysis and
 together with the unknown solution z, in which case additional boundary conditions are required.  
 **bvpsuite2.0** is a product of years of research at the Institute for Analysis and Scientific Computing on the analysis and numerical solution of ODEs with time and space singularities. Through the years, the code evolved from **sbvp**, a collocation code for singular ODEs of the first order, to **bvpsuite1.1**, which can also handle explicit and implicit problems of arbitrary order, to **bvpsuite2.0**, which improves on usability and readability of the code. The code in the package is now structured in a simpler modular form.
 
+* * *
+1.  *The highest involved derivative may vary with the solution component and it can also be zero, which means that algebraic constraint which do not involve derivatives are also admitted*. [↩︎](#fnref1)
+2.  *\[a, ∞), where a ≥ 0 and Dirichlet-type boundary conditions are posed at infinity*. [↩︎](#fnref2)
+* * *
+
+
 ## Solver
 
 As in the previous versions of the code, collocation is used for the numerical solution of the underlying boundary value problems. A collocation solution is a piecewise polynomial function which satisfies the given ODE at a finite number of nodes (collocation points). This approach shows advantageous convergence properties compared to other direct higher order methods (see [link 1](https://pdfs.semanticscholar.org/0fc4/408259d7358323a9722f960b9209eab06d8d.pdf)). However, the superconvergence in the context of collocation applied to singular problems can not be guaranteed in general, see for example [link 2](https://www.jstor.org/stable/2156572?seq=1) and [link 3](https://www.jstor.org/stable/2157516?seq=1). Our estimate for the global error of the collocation solution is a classical error estimate based on mesh halving. To make the computations more efficient, an adaptive mesh selection strategy based on the control of residual and the global error estimate has been implemented. A detailed description of this mesh selection algorithm is given in [link 4](https://link.springer.com/article/10.1007/s11075-010-9374-0).  
@@ -26,6 +32,3 @@ Finally, in the third and final section, we present a few examples of BVPs to hi
 
 * * *
 
-1.  *The highest involved derivative may vary with the solution component and it can also be zero, which means that algebraic constraint which do not involve derivatives are also admitted*. [↩︎](#fnref1)
-    
-2.  *\[a, ∞), where a ≥ 0 and Dirichlet-type boundary conditions are posed at infinity*. [↩︎](#fnref2)
