@@ -26,9 +26,10 @@ and of the pathfollowing case:
 
 ## How to get started using bvpsuite2.0
 
-The manual aims to help users to get started with the computations of their own problems with **bvpsuite2.0**.  
+The [manual](https://github.com/NumODEsTUW/bvpsuite2.0/blob/main/manual_bvpsuite2.0.pdf) aims to help users to get started with the computations of their own problems with **bvpsuite2.0**.  
 At the beginning of the second section of the manual, **bvpsuite2.0** is used to compute the solution of a simple example. Then the model problem in a general form, for which **bvpsuite2.0** can find approximate solutions, is presented. Afterwards, the input arguments and also the output of the function call are briefly discussed.  
 Finally, in the third and final section, we present a few examples of BVPs to highlight some of the features of the seven modules of the code.
 
+* * *
 * * *
 
