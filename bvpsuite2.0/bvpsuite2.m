@@ -2,7 +2,7 @@ function [x1,valx1,solution] = bvpsuite2(problem,settings,initProfile,pathfoll)
 
 % Matlab Code BVPSUITE2.0 (beta-version July 2018).
 % Authors: Winfried Auzinger, Merlin Fallahpour, Georg Kitzhofer,
-% Othmar Koch, Gernot Pulverer, Gustaf Söderlind, Ewa B. Weinmueller and
+% Othmar Koch, Gernot Pulverer, Gustaf SÃ¶derlind, Ewa B. Weinmueller and
 % Stefan Wurm.
 % Institute for Analysis and Scientific Computing, Vienna University of
 % Technology, Vienna, Austria.
@@ -30,9 +30,9 @@ function [x1,valx1,solution] = bvpsuite2(problem,settings,initProfile,pathfoll)
 %                           Merlin Fallahpour
 %                           Georg Kitzhofer
 %                           Othmar Koch
-%                           Georg Pulverer
-%                           Gustaf Söderlind
-%                           Ewa B. Weinmüller
+%                           Gernot Pulverer
+%                           Gustaf SÃ¶derlind
+%                           Ewa B. WeinmÃ¼ller
 %                           Stefan Wurm
 %                           Vienna University of Technology
 
@@ -162,7 +162,7 @@ if pathfoll.activate
     solution.filename = filename;
 end
 
-%Löse lineares Problem
+%LÃ¶se lineares Problem
 if (feval_problem(problem,'linear') == 1) && isempty(solution)
     dispDebug('Lineares Problem',debug);
     
